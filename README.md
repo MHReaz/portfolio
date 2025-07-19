@@ -62,6 +62,26 @@ This project is built with:
 
 ## How can I deploy this project?
 
+**GitHub Pages Deployment (Automated)**
+
+This project is configured to automatically deploy to GitHub Pages when changes are pushed to the main branch.
+
+1. Push your changes to the main branch
+2. GitHub Actions will automatically build and deploy the site
+3. Your site will be available at: `https://mhreaz.github.io/reaz-flutter-folio/`
+
+**Manual Build for GitHub Pages**
+
+```sh
+# Build for GitHub Pages
+npm run build:pages
+
+# Preview the production build locally
+npm run preview
+```
+
+**Lovable Platform**
+
 Simply open [Lovable](https://lovable.dev/projects/961640e7-7b6b-4d89-8409-0acbe7e05710) and click on Share -> Publish.
 
 ## Can I connect a custom domain to my Lovable project?

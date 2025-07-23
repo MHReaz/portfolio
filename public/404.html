@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mehadi Hasan Reaz - Flutter Developer Portfolio</title>
+    <script>
+      // GitHub Pages SPA redirect script
+      // This script takes the current path and redirects to the main index.html
+      // with the path as a query parameter that can be read by the React app
+      
+      const path = window.location.pathname.replace('/reaz-flutter-folio', '');
+      const query = window.location.search;
+      const hash = window.location.hash;
+      
+      // Redirect to index.html with the path info
+      window.location.href = '/reaz-flutter-folio/' + (path === '/' ? '' : '?redirect=' + encodeURIComponent(path + query + hash));
+    </script>
+  </head>
+  <body>
+    <div>Redirecting...</div>
+  </body>
+</html>

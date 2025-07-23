@@ -43,6 +43,8 @@ The project includes:
 - **Vite configuration** with correct base path for GitHub Pages
 - **GitHub Actions workflow** (`.github/workflows/deploy.yml`)
 - **Jekyll bypass** (`.nojekyll` file)
+- **SPA routing support** with 404.html redirect mechanism
+- **React Router basename** configured for GitHub Pages subdirectory
 
 ## Troubleshooting
 
@@ -51,3 +53,14 @@ If deployment fails:
 2. Ensure GitHub Pages is enabled in repository settings
 3. Verify the `main` branch has the latest changes
 4. Check that repository has proper permissions for GitHub Actions and Pages
+
+### Common Issues:
+
+**404 Error when accessing routes:**
+- This has been fixed with SPA routing support
+- The 404.html file automatically redirects to the main app
+- React Router is configured with the correct basename
+
+**Assets not loading:**
+- Ensure the vite.config.ts has the correct base path
+- Check that the build command uses production mode
